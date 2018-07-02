@@ -17,79 +17,63 @@ class Collaborateur(Entreprise):
 		self.__telephone = telephone
 		self.__informationCollab = informationCollab
 
-	#######################################
-	""" 	nom <getter><setter> 		"""
-	#######################################
+####################################
 
-	def __getnom(self):
+	@property	
+	def nom(self):
 		return self.__nom
 	
-	def __setnom(self, setNom):
-		self.__nom = setNom
+	@nom.setter
+	def nom(self, v):
+		self.__nom = v
 
-	nom = property(__getnom, __setnom)
 
-	#######################################
-	""" 	Prénom <getter><setter> 	"""
-	#######################################
-
-	def __getprenom(self):
+	@property
+	def prenom(self):
 		return self.__prenom
 
-	def __setprenom(self, setprenom):
-		self.__prenom = setprenom
+	@prenom.setter
+	def prenom(self, v):
+		self.__prenom = v
 
-	prenom = property(__getprenom, __setprenom)
 
-	#######################################
-	""" 	Poste <getter><setter> 		"""
-	#######################################
-
-	def __getposte(self):
+	@property
+	def poste(self):
 		return self.__poste
 
-	def __setposte(self, setposte):
-		self.__poste = setposte
+	@poste.setter
+	def poste(self, v):
+		self.__poste = v
 
-	poste = property(__getposte, __setposte)
 
-	#######################################
-	""" 	mail <getter><setter> 		"""
-	#######################################
-
-	def __getmail(self):
+	@property
+	def mail(self):
 		return self.__mail
 
-	def __setmail(self, setmail):
-		self.__mail = setmail
+	@mail.setter
+	def mail(self, v):
+		self.__mail = v
 
-	mail = property(__getmail, __setmail)
 
-	#######################################
-	"""   telephone  <getter><setter> 	"""
-	#######################################
-
-	def __gettelephone(self):
+	@property
+	def telephone(self):
 		return self.__telephone
 
-	def __settelephone(self, settelephone):
-		self.__telephone = settelephone
+	@telephone.setter
+	def telephone(self, v):
+		self.__telephone = v
 
-	telephone = property(__gettelephone, __settelephone)
 
-	###############################################
-	"""   informationCollab  <getter><setter> 	"""
-	###############################################
-
-	def __getinformationCollab(self):
+	@property
+	def informationCollab(self):
 		return self.__informationCollab
 
-	def __setinformationCollab(self, setinformationCollab):
-		self.__informationCollab = setinformationCollab
+	@informationCollab.setter
+	def informationCollab(self, v):
+		self.__informationCollab = v
 
-	informationCollab = property(__getinformationCollab, __setinformationCollab)
 
-	#################################################
+#####################################################
 
 
 	def voirCollaborateur(self):

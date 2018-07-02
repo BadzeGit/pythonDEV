@@ -7,30 +7,24 @@ class Entreprise(object):
 		self.__raisonSociale = raisonSociale
 		self.__informationEntrep = informationEntrep
 
-	#######################################
-	""" Raison Sociale <getter><setter> """
-	#######################################
 
-	def __getraisonSociale(self):
+	@property
+	def raisonSociale(self):
 		return self.__raisonSociale
 
+	@raisonSociale.setter
+	def raisonSociale(self, v):
+		self.__raisonSociale = v
 
-	def __setraisonSociale(self, setraisonSociale):
-		self.__raisonSociale = setraisonSociale
 
-	raisonSociale = property(__getraisonSociale,__setraisonSociale)
-
-	##########################################
-	""" informationEntrep <getter><setter> """
-	##########################################
-
-	def __getinformationEntrep(self):
+	@property
+	def informationEntrep(self):
 		return self.__informationEntrep
 
+	@informationEntrep.setter
+	def informationEntrep(self, v):
+		self.__informationEntrep = v
 
-	def __setinformationEntrep(self, setinformationEntrep):
-		self.__informationEntrep = setinformationEntrep
 
-	informationEntrep = property(__getinformationEntrep,__setinformationEntrep)
+###############################################
 
-	##########################################
